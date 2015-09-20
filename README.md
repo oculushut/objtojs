@@ -3,6 +3,15 @@ objtojs
 
 A nodejs module to parses WaveFront Object (.obj) files to javascript or JSON.
 
+This is a fork of chrispalazzolo's objtojs.  All it does is skips parsing usemtl and smoothing groups information from the select OBJ file.
+
+It's a lame-ass workaround I have put in place to get around the problems that this library has with parsing this information as I don't need this for my current purposes.
+
+More info on these 2 known issues can be found here:
+
+https://github.com/chrispalazzolo/objtojs/issues/1
+https://github.com/chrispalazzolo/objtojs/issues/2
+
 Overview
 --------
 Parse WaveFront Object file (.obj) to a javascript object and/or JSON.
