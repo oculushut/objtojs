@@ -171,7 +171,8 @@ function parseText(text, cbFunc){
 						break;
 					case 'usemtl': // Material name
 						write("Parsing Materal name (usemtl): " + line[1]);
-						obj.use_material = line[1];
+						write("Skipping parsing usemtl data - Temporary Bug Workaround");
+						//obj.use_material = line[1];
 						break;
 					case 'v':  // Geometric vertices
 					case 'vt': // Texture vertices
@@ -285,7 +286,8 @@ function parseText(text, cbFunc){
 						break;
 					case 's': // Smoothing Group
 						write("Parsing Smoothing Group (s)...");
-						obj.smoothing = line[1];
+						write("Skipping parsing smoothing group data - Temporary Bug Workaround");
+						//obj.smoothing = line[1];
 						break;
 					case 'cstype': // Curve or Surface type
 						write("Parsing cstype...");
